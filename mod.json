@@ -1,0 +1,77 @@
+{
+	"geode": "3.1.1",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "pagdorn.big_man",
+	"name": "big man",
+	"version": "v1.0.0",
+	"developer": "pagdorn",
+	"description": "adds big man to the game!",
+	"resources": {
+		"files": [
+			"resources/*.png"
+		]
+	},
+	"settings": {
+		"jumpscare": {
+			"name": "Enable Big Man Jumpscare",
+			"description": "Enables a picture of Big Man appearing every time you click.",
+			"type": "bool",
+			"default": false
+		},
+		"menu": {
+			"name": "Enable Menu Big Man",
+			"description": "Makes Big Man appear on the main menu.",
+			"type": "bool",
+			"default": true
+		},
+		"corner": {
+			"name": "Enable Corner Big Man",
+			"description": "Toggle Big Man in the bottom right corner, like in tricipital's streams.\nWARNING: the game instantly crashes when playing any online level (for some reason) if this option is enabled!",
+			"type": "bool",
+			"default": false
+		},
+		"size": {
+			"name": "Corner Big Man Size",
+			"description": "Size of Big Man in the corner.",
+			"type": "float",
+			"default": 1.0,
+			"min": 0,
+			"max": 4
+		},
+		"corner-text": {
+			"name": "Corner Big Man Text",
+			"description": "wether the text saying \"Big Man\" should appear when Corner Big Man is enabled.",
+			"type": "bool",
+			"default": true
+		},
+		"opacity": {
+			"name": "Corner Big Man Opacity",
+			"description": "Opacity of Big Man in the corner.",
+			"type": "float",
+			"default": 255,
+			"min": 0,
+			"max": 255
+		},
+		"overlay": {
+			"name": "Big Man Overlay",
+			"description": "Select a blending mode for the Big Man overlay. \n0 = disabled\n1 = Additive Blending\n2 = Multiplicative Blending\n3 = Subtractive Blending\n4 = Screen Blending\n5 = Darken Blending\n6 = Lighten Blending\n7 = Inverse Blending\n8 = Overlay Blending\nWARNING: the game instantly crashes when playing any online level (for some reason) if this option is enabled!",
+			"type": "int",
+			"min": 0,
+			"max": 9,
+			"default": 0
+		},
+		"overlay-opacity": {
+			"name": "Big Man Overlay Opacity",
+			"description": "Opacity for the Big Man overlay.",
+			"type": "float",
+			"default": 255,
+			"min": 0,
+			"max": 255
+		}
+	}
+}
